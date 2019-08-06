@@ -27,21 +27,17 @@ body {
 
 }
 
-.top {
-  filter: none;
-}
-
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 
 #quote-box {
+  justify-content: center;
   display: flex;
   align-items: flex-end;
   width: 100%;
-  height: 80vh;
-
+  height: 60vh;
   padding: 30px;
 }
 
