@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
@@ -9,11 +13,7 @@ body {
 
 #bg  {
   background-color: lightblue;
-  transition: color 5s ease;
-  -webkit-transition: .6s ease;
-  -moz-transition: .6s ease;
-  -ms-transition: .6s ease;
-  -o-transition: .6s ease;
+  transition: background-color .6s ease;
   position: absolute;
   top: 0;
   left: 0;
@@ -36,16 +36,20 @@ code {
     monospace;
 }
 
+#quote-box {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 80vh;
+
+  padding: 30px;
+}
+
 #button-row {
   padding-top: 1%;
-  margin-bottom: 200px;
 }
 
 #main-display {
-  position: absolute;
-  bottom: 20vh;
+  max-width: 800px;
   width: 100%;
-  max-width: 900px;
-  left: 50%;
-  transform: translateX(-50%);
 }
