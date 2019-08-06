@@ -44,7 +44,7 @@ function ButtonRow(props) {
                 <Grid item xs={4}>
                     <Paper className={classes.paper}>
                         <Button id='new-quote' onClick={() => {props.getRandomQuote(); document.getElementById('bg').style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);}}>
-                            New Quote
+                            New
                             <ReloadIcon className={classes.rightIcon} />
                         </Button>
                     </Paper>
