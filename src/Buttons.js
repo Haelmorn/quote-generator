@@ -27,7 +27,7 @@ function ButtonRow(props) {
             <Grid container spacing={1}>
                 <Grid item xs={4}>
                     <Paper className={classes.paper}>
-                        <Button id='tweet-quote' onClick={() => props.shareTweet()}>
+                        <Button id='tweet-quote' onClick={() => props.shareTweet()} fullWidth='true'>
                             Twitter
                             <TwitterIcon />
                         </Button>
@@ -35,15 +35,15 @@ function ButtonRow(props) {
                 </Grid>
                 <Grid item xs={4}>
                     <Paper className={classes.paper}>
-                        <Button disabled>
+                        <Button disabled fullWidth='true'>
                             Instagram
                             <IgIcon />
                         </Button>
                     </Paper>
                 </Grid>
                 <Grid item xs={4}>
-                    <Paper className={classes.paper}>
-                        <Button id='new-quote' onClick={() => {props.getRandomQuote(); document.getElementById('bg').style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);}}>
+                    <Paper className={classes.paper} onClick={() => console.log("klik")}>
+                        <Button fullWidth='true' id='new-quote' onClick={() => {props.getRandomQuote(); document.getElementById('bg').style.background='#'+(0x1000000+(Math.random())*0xffffff).toString(16).substr(1,6);}}>
                             New
                             <ReloadIcon className={classes.rightIcon} />
                         </Button>
