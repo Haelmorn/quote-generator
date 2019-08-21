@@ -1,5 +1,13 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Quote Generator
+
+This project was created as a part of FreeCodeCamp front-end library certification.</br>
+Quote generator picks a random quote, from a database of ~140 quotes and displays it to the user. </br>
+</br>
+It also gives the user the option to Tweet the quote.</br>
+The feature to post the quote to instagram is currently WIP.
+
 ## Available Scripts
 
 In the project directory, you can run:
@@ -11,6 +19,10 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 The page will reload if you make edits.<br>
 You will also see any lint errors in the console.
+
+### `npm run deploy`
+
+Deploys the app to GH-pages.
 
 ### `npm test`
 
@@ -28,6 +40,7 @@ Your app is ready to be deployed!
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
 ### `npm run eject`
+
 
 **Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
